@@ -9,7 +9,7 @@ const getPosts = async () => {
         let lista = "";
         data.forEach(post => {
             lista += `<li><span>${post.title}</span><br/>${post.body}</li>`;
-            listaPosts.innerHTML = lista;
+            listaPosts.innerHTML = `<ul>${lista}</ul>`;
             
         })
         
